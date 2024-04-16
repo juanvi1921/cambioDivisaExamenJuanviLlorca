@@ -1,11 +1,12 @@
 public class Money {
+    private float constEURaUSD = 1.18798F;
+    private float constUSDaEUR = 0.841815F;
+    private float constEURaGBP = 0.857839F;
+    private float constGBPaEUR = 1.165826F;
+    private float constError = -1F;
 
-    public static float change(TipoMoneda origen, TipoMoneda destino, float money) {
-        float constEURaUSD = 1.18798F;
-        float constUSDaEUR = 0.841815F;
-        float constEURaGBP = 0.857839F;
-        float constGBPaEUR = 1.165826F;
-        float constError = -1F;
+    public float change(TipoMoneda origen, TipoMoneda destino, float money) {
+
         float moneyConverted;
         float moneyConvertedEur;
         if (money > 0) {
