@@ -1,3 +1,3 @@
 public enum TipoMoneda {
-    EUR, USD, GBP;
+    EUR, USD, GBP, PTS;
 }

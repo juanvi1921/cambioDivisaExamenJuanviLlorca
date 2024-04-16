@@ -32,4 +32,14 @@ class MoneyTest {
     void moneyTest6() {
         assertEquals(722.14F,Money.change(TipoMoneda.USD, TipoMoneda.GBP, 1000.0F));
     }
+
+    @Test
+    void moneyTest7() {
+        assertEquals(-1F, Money.change(TipoMoneda.EUR, TipoMoneda.PTS, 123.3F));
+    }
+
+    @Test
+    void moneyTest8 () {
+        assertEquals(-1F, Money.change(TipoMoneda.USD, TipoMoneda.EUR, -167.34F));
+    }
 }
